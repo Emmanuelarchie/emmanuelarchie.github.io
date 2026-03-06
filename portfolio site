@@ -140,4 +140,37 @@ grid-template-columns: 1fr;
 </style>
 </head>
 
+<body>
+
+<div class="container">
+
+<h1>Emmanuel Archibong</h1>
+<p class="subtitle">
+  Technical Product Manager & Software Engineer (QE)
+</p>
+
+<!-- Navigation -->
+<nav class= "menu">
+<a href="#intro"> # intro</a>
+<a href="#experience"># experience</a>
+<a href="#projects"># projects</a>
+<a href="#skills"> # skills</a>
+<a href="#education"># education</a>
+<a href="#contact"># contact</a>
+</nav>
+
+<section id="intro">
+<h2># intro</h2>
+<p>
+I am a customer-centric product manager and software developer. I build scalable products
+and design system ensuring risk and quality considerations.I am passionate about data, with 
+expertise in transforming complex data into actionable insights that drive dynamic and innovative 
+strategies. Building technologies that solve real world problems, I champion quality assurance
+through thorough testing, code review, and post-sale/release validation. I want to challenge
+the industry and I deliver on my promises.
+
+</p>
+</section>
+
+
 
