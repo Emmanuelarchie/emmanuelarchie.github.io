@@ -181,5 +181,81 @@ div class="experience-item">
 <h3>ResQ</h3>
 <p>Telesales specialist *Mar 2026 - Present</>
 
+<ul>
+<li> Generated £600-£1,200£ in daily revenue through the sale of mobile devices, 
+broadband packages, and smart connectivity services.
+<li> Maintained a 10-15% sales conversion rate by identifying customer needs,
+handling objections, and effectivelyy closing deals.
+<li> Promoted and processed 4-7 UK energy tariff switches daily, 
+helping customers reduce energy costs through competitive supplier plans.
+<li>Recorded 100% of call interactions in CRM systems, 
+maintaining accurate customer data and follow-up pipelines.
+<li>Consistently achieved 85-95% quality assurance scores in monitored calls by adhering
+to sales scripts,compliance standards, and customer service guidelines.
+</ul>
+</div>
+
+<div class="experience-item">
+<h3> USAID Integrated Health Program</h3>
+<p>Information Technology support *Dec 2023 - Aug 2024 </p>
+
+<ul> 
+<li> Provided first-line and Tier 2 technical support for 80+ end users,resolving 80% of 
+tickets within SLA time.
+<li> Configured, installed and maintained 60+ desktops, laptop network gadgets, printers and mobile devices, 
+reducing downtime by 30%.
+<li> Managed payroll systems, Active Directory and Microsoft 365 packages for over 200 staff, including updates,
+password resets, permissions and security polices.
+<li>Coordinated with tech vendors and services providers to curb hardware and software malfunctions, 
+reducing virus and malware incidents ny 60%
+<li> Managed documentation for the disposal of 70+ IT equipment to partnering organizations and government
+agencies ensuring 100% compliance to USAID environment & waste polices.
+</ul>
+</div>
+
+<div class= "experience-item"
+<h3>Ryffable<h3>
+<p>Software Engineer * Oct 2021 - Feb 2022 </p>
+<li>Worked closely with senior engineers to integrate third-party APIs into the CRM, monitoring data flows
+with CloudWatch and improving data sync and storage by 15%.
+<li>Contribute to building testing frameworks that helped in catching issues early and reducing production
+defects by 35%.
+<li>Participated in sprint planning and code reviews, while learning best practices in agile software delivery 
+and system design.
+<li>Contributed to over £317,400+ in revenue growth through tech sales while maintaining 22% MoM retention across
+users.
+<li>Teamed up with QA to automate test core services, improving reliability and cutting customer-impacting bugs by 50%
+<li>Led test strategy with engineers to review and design edge case for cypress tests and CI/CD check, which 
+helped in reducing regression time by 25%.
+</ul>
+</div>
+
+<div class="experience-item">
+<h3>Previous Company</h3>
+<p>Program manager intern *May 2020 - Nov 2020 </p>
+
+<ul>
+<li>Collaborated with product and engineering teams during scrum planning sessions to understand technical requirements,
+discuss trade-offs and support the delivery of new feature requests and scalable internal applications.
+<li>Assisted with AWS cloud updates and refactored duplicate JS code, which improved product stability and maintainability
+by 12%
+<li>Helped document REST APIs to improve and make third-party integrations easier for the company's marketing system.
+<li>Partnered cross-functionally with product managers, designers,QA and engineers to define user stories and KPIs that
+helped teams to align strategically for new marketplace and monitization feature updates.
+
+</ul>
+</div>
+
+</section>
+
+<section id ="projects">
+<h2># projects</h2>
+
+<div class = "projects-grid">
+
+<div class="project-card">
+
+
+
 
 
