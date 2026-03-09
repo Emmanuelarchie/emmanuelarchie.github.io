@@ -254,6 +254,10 @@ helped teams to align strategically for new marketplace and monitization feature
 <div class = "projects-grid">
 
 <div class="project-card">
+<h3> Physio APP </h3>
+<p> Built an application that uses a command-line interface (CLI) that displays a menu of options
+in the terminal. Users interact with the system by entering a number corresponding to the desired action, 
+such as booking an appointment or cancelling one.
 
 
 
