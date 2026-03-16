@@ -1,31 +1,30 @@
-</>
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
-<meta charset="UTF -8 />
-<meta name= "viewport" content="width=device-width, initial -scale=1.0" />
-<title> Emmanuel Archibong | MY Portfolio</title>
-<style>
-:root {
-  --bg: #07090f;
-  --bg-soft: rgba(17, 24, 39, 0.72);
-  --panel: rgba(15, 23, 42, 0.72);
-  --panel-2: rgba(10, 15, 28, 0.86);
-  --border: rgba(148, 163, 184, 0.14);
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #3b82f6;
-  --accent-2:#22d3ee;
-  --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-  --radius: 24px;
-  --mono: "Courier New" Courier, monospace;
-  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMac
-}
-  * { box-sizing: border-box; }
-html {scroll-behavior: smooth; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Archibong | Portfolio</title>
+  <style>
+    :root {
+      --bg: #07090f;
+      --bg-soft: rgba(17, 24, 39, 0.72);
+      --panel: rgba(15, 23, 42, 0.72);
+      --panel-2: rgba(10, 15, 28, 0.86);
+      --border: rgba(148, 163, 184, 0.14);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+      --accent-2: #22d3ee;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --mono: "Courier New", Courier, monospace;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-body {
-margin: 0;
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
       color: var(--text);
       font-family: var(--mono);
       background:
@@ -33,101 +32,105 @@ margin: 0;
         radial-gradient(circle at right 20%, rgba(34, 211, 238, 0.09), transparent 26%),
         linear-gradient(180deg, #06070c 0%, #080b12 60%, #05070b 100%);
       min-height: 100vh;
-}
+    }
 
-  body::before {
-    content: "";
-    position: fixed;
-    instet: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size: 48px 48px;
-    mask-image: liner-gradient(to bottom, rgba(255, 255, 255, 0.55), transparent 85%)
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, rgba(255,255,255,0.55), transparent 85%);
       z-index: 0;
-  }
+    }
 
-  img, video { max-width: 100%; display: block; }
-  a {color: inherit; }
-  
-.container {
-width: min(1180px, calc(100% -32px));
-margin: 0 auto;
-position: relative;
-z-index: 1;
-}
+    img, video { max-width: 100%; display: block; }
+    a { color: inherit; }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  backdrop-filter: blur(16px);
-  background: rgba(6, 9, 15, 0.72);
-  border-bottom: 1px solid rgba(255,255,0.06);
-}
-.topbar-inner {
-  display: flex;
-  align-items: centre;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 16px 0;
-}
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
 
-.brand {
-  display: flex;
-  align-items: centre;
-  gap: 14px;
-  min-width: 0;
-}
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(6, 9, 15, 0.72);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
 
-.brand-badge {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  display: grid;
-  place-items: centre;
-  background: linear-gradient(180deg,rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  font-weight: 700;
-  color: white;
-}
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0;
+    }
 
-.brand-text h1 {
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  font-family: var(--sans);
-  letter-spacing: 0.02em;
-} 
-.brand-text p {
-  margin: 4px 0 0;
-  color: var (--muted);
-  font-size: 0.92rem;
-}
- .nav-links {
- display: flex;
- align-items: center;
- gap: 10px;
- flex-wrap: wrap;
- justify-content: flex-end;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      color: white;
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.1;
+      font-family: var(--sans);
+      letter-spacing: 0.02em;
+    }
+
+    .brand-text p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .nav-links a,
     .chip-link {
-text-decoration: none;
-border: 1px solid var(--border);
-background: rgba(17, 24, 39, 0.52);
-color: var(--text);
-padding: 10px 16px;
-border-radius: 16px;
-transition: 0.25s ease;
-font-size: 0.95rem;
-}
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: rgba(17, 24, 39, 0.52);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 16px;
+      transition: 0.25s ease;
+      font-size: 0.95rem;
+      font-family: var(--sans);
+      font-weight: 600;
+    }
 
-}
-.nav-links a:hover,
+    .nav-links a:hover,
     .chip-link:hover,
     .button:hover {
       transform: translateY(-2px);
@@ -142,7 +145,7 @@ font-size: 0.95rem;
       color: #dbeafe;
     }
 
-   .hero {
+    .hero {
       display: grid;
       grid-template-columns: 1.25fr 0.85fr;
       gap: 28px;
@@ -160,7 +163,7 @@ font-size: 0.95rem;
       box-shadow: var(--shadow);
     }
 
-   .hero-left {
+    .hero-left {
       padding: 34px;
     }
 
@@ -180,7 +183,8 @@ font-size: 0.95rem;
       color: white;
       max-width: 12ch;
     }
-   .accent { color: var(--accent); }
+
+    .accent { color: var(--accent); }
 
     .hero-left .summary {
       color: #c7ced8;
@@ -196,7 +200,8 @@ font-size: 0.95rem;
       gap: 10px;
       margin-bottom: 24px;
     }
- .tag {
+
+    .tag {
       border: 1px solid var(--border);
       padding: 10px 14px;
       border-radius: 999px;
@@ -210,7 +215,8 @@ font-size: 0.95rem;
       gap: 14px;
       flex-wrap: wrap;
     }
- .button {
+
+    .button {
       text-decoration: none;
       padding: 14px 20px;
       border-radius: 16px;
@@ -227,7 +233,8 @@ font-size: 0.95rem;
       gap: 14px;
       justify-content: center;
     }
- .impact-card {
+
+    .impact-card {
       background: linear-gradient(180deg, rgba(8,12,22,0.8), rgba(6,10,18,0.98));
       border: 1px solid rgba(148,163,184,0.12);
       border-radius: 20px;
@@ -261,7 +268,8 @@ font-size: 0.95rem;
     .section-shell {
       padding: 28px;
     }
-   .section-head {
+
+    .section-head {
       display: flex;
       justify-content: space-between;
       gap: 18px;
@@ -281,7 +289,15 @@ font-size: 0.95rem;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
     }
-.skill-box,
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .skill-box,
     .timeline,
     .project-card,
     .contact-card,
@@ -293,6 +309,70 @@ font-size: 0.95rem;
       min-width: 0;
     }
 
+    .experience-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 18px;
+      background: linear-gradient(180deg, rgba(10,15,28,0.86), rgba(8,10,18,0.96));
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      min-width: 0;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(59, 130, 246, 0.28);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+
+    .experience-main {
+      min-width: 0;
+    }
+
+    .outcome-panel {
+      align-self: start;
+      border: 1px solid rgba(59, 130, 246, 0.18);
+      background: linear-gradient(180deg, rgba(59,130,246,0.08), rgba(8,10,18,0.88));
+      border-radius: 18px;
+      padding: 16px;
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .experience-card:hover .outcome-panel {
+      transform: translateY(-2px) scale(1.01);
+      border-color: rgba(59, 130, 246, 0.32);
+      background: linear-gradient(180deg, rgba(59,130,246,0.14), rgba(8,10,18,0.92));
+    }
+
+    .outcome-label {
+      color: #bfdbfe;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-family: var(--sans);
+      font-weight: 700;
+    }
+
+    .outcome-stat {
+      font-family: var(--sans);
+      font-size: 2rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .outcome-text {
+      color: #dbe7f6;
+      line-height: 1.55;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
     .skill-box h4,
     .timeline h4,
     .project-card h4,
@@ -302,7 +382,7 @@ font-size: 0.95rem;
       color: white;
       font-size: 1.2rem;
       font-family: var(--sans);
-       }
+    }
 
     .chips {
       display: flex;
@@ -318,7 +398,8 @@ font-size: 0.95rem;
       background: rgba(255,255,255,0.03);
       color: #dce4ee;
     }
-   .timeline h5,
+
+    .timeline h5,
     .project-card h5 {
       margin: 0 0 8px;
       font-size: 1.15rem;
@@ -339,7 +420,8 @@ font-size: 0.95rem;
       color: #cfd6de;
       line-height: 1.65;
     }
-  .timeline li + li,
+
+    .timeline li + li,
     .project-card li + li {
       margin-top: 8px;
     }
@@ -359,7 +441,8 @@ font-size: 0.95rem;
       background: #02040a;
       margin: 16px 0;
     }
-  .project-links {
+
+    .project-links {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
@@ -380,7 +463,8 @@ font-size: 0.95rem;
       color: #a5f3fc;
       transform: translateY(-2px);
     }
-  .education-grid,
+
+    .education-grid,
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -398,7 +482,12 @@ font-size: 0.95rem;
       .two-col,
       .projects-grid,
       .education-grid,
-      .contact-grid {
+      .contact-grid,
+      .experience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-card {
         grid-template-columns: 1fr;
       }
 
@@ -422,246 +511,319 @@ font-size: 0.95rem;
       .nav-links a, .chip-link, .button { width: auto; }
     }
   </style>
-  
-
 </head>
-
 <body>
-
-<div class="container">
-
-<h1>Emmanuel Archibong</h1>
-<p class="subtitle">
-  Technical Product Manager & Software Engineer (QE)
-</p>
-
-<!-- Navigation -->
-<nav class= "menu">
-<a href="#intro"> # intro</a>
-<a href="#experience"># experience</a>
-<a href="#projects"># projects</a>
-<a href="#skills"> # skills</a>
-<a href="#education"># education</a>
-<a href="#contact"># contact</a>
-</nav>
-
-<section id="intro">
-<h2># intro</h2>
-<p>
-I am a customer-centric product manager and software developer. I build scalable products
-and design system ensuring risk and quality considerations.I am passionate about data, with 
-expertise in transforming complex data into actionable insights that drive dynamic and innovative 
-strategies. Building technologies that solve real world problems, I champion quality assurance
-through thorough testing, code review, and post-sale/release validation. I want to challenge
-the industry and I deliver on my promises.
-
-</p>
-
-</section>
-
-<section id="experience">
-
-<h2># experience</h2>
-
-<div class="experience-item" class="section-shell">
-  <div class="section-head">
-    <div>
-  <p class="section-label">// work history</p>
-      <h2># experience</h2>
-    </div>
-    <p class="muted">Roles, responsibilities, and measurable outcomes.</p>
-  </div>
-  <div class="experience-grid">
-    <article class="experience-card">
-      <div class="experience-top">
-        <div>
-<h3>ResQ</h3>
-          
-<p class= "meta">Telesales specialist •Mar 2026 - Present</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">EA</div>
+        <div class="brand-text">
+          <h1>Emmanuel Archibong</h1>
+          <p>Technical Product Manager • Software Engineer (QE)</p>
         </div>
-<ul>
-<li> Generated £600-£1,200£ in daily revenue through the sale of mobile devices, 
-broadband packages, and smart connectivity services.
-<li> Maintained a 10-15% sales conversion rate by identifying customer needs,
-handling objections, and effectivelyy closing deals.
-<li> Promoted and processed 4-7 UK energy tariff switches daily, 
-helping customers reduce energy costs through competitive supplier plans.
-<li>Recorded 100% of call interactions in CRM systems, 
-maintaining accurate customer data and follow-up pipelines.
-<li>Consistently achieved 85-95% quality assurance scores in monitored calls by adhering
-to sales scripts,compliance standards, and customer service guidelines.
-</ul>
-    </article> 
-
-    <article class="experience-card">
-      <div class="experience-top">
-        <div>
-<h3> USAID Integrated Health Program</h3>
-<p class= "meta">Information Technology support • Dec 2023 - Aug 2024 </p>
-        </div>
-        <span class="role-pill"> IT Support</span>
-      </div>
-<li> Provided first-line and Tier 2 technical support for 80+ end users,resolving 80% of 
-tickets within SLA time.</li>
-<li> Configured, installed and maintained 60+ desktops, laptop network gadgets, printers and mobile devices, 
-reducing downtime by 30%.</li>
-<li> Managed payroll systems, Active Directory and Microsoft 365 packages for over 200 staff, including updates,
-password resets, permissions and security polices.</li>
-<li>Coordinated with tech vendors and services providers to curb hardware and software malfunctions, 
-reducing virus and malware incidents by 60%</li>
-<li> Managed documentation for the disposal of 70+ IT equipment to partnering organizations and government
-agencies ensuring 100% compliance to USAID environment & waste polices.</li>
-</ul>
-    </article>
-
-
-<article class="experience-card">
-  <div class="experience-top">
-    <div>
-<h3>Ryffable<h3>
-<p class = "meta">Software Engineer • Oct 2021 - Feb 2022 </p>
-<div>
-</span class="role-pill">Engineering</span>
-</div>
-  
-  <ul>
-<li>Worked closely with senior engineers to integrate third-party APIs into the CRM, monitoring data flows
-with CloudWatch and improving data sync and storage by 15%.</li>
-<li>Contribute to building testing frameworks that helped in catching issues early and reducing production
-defects by 35%.</li>
-<li>Participated in sprint planning and code reviews, while learning best practices in agile software delivery 
-and system design.</li>
-<li>Contributed to over £317,400+ in revenue growth through tech sales while maintaining 22% MoM retention across
-users.</li>
-<li>Teamed up with QA to automate test core services, improving reliability and cutting customer-impacting bugs by 50% </li>
-<li>Led test strategy with engineers to review and design edge case for cypress tests and CI/CD check, which helped in reducing regression time by 25%.</li>
-</ul>
-</article>
-  <article class="experience-card">
-      <div class="experience-top">
-        <div>
-          <h3>Previous Company</h3>
-          <p class="meta">Program Manager Intern • May 2020 – Nov 2020</p>
-        </div>
-        <span class="role-pill">Product</span>
       </div>
 
-<ul>
-<li>Collaborated with product and engineering teams during scrum planning sessions to understand technical requirements,
-discuss trade-offs and support the delivery of new feature requests and scalable internal applications.</li>
-<li>Assisted with AWS cloud updates and refactored duplicate JS code, which improved product stability and maintainability
-by 12%</li>
-<li>Helped document REST APIs to improve and make third-party integrations easier for the company's marketing system.</li>
-<li>Partnered cross-functionally with product managers, designers,QA and engineers to define user stories and KPIs that
-helped teams to align strategically for new marketplace and monitization feature updates.</li>
-
-</ul>
-  </article>
-</div>
-
-</section>
-
-<section id ="projects">
-<h2># projects</h2>
-
-<div class = "projects-grid">
-
-<div class="project-card">
-<h3> Physio App </h3>
-<p> Built an application coded with java that uses a command-line interface (CLI) that displays a menu of options
-in the terminal. Users interact with the system by entering a number corresponding to the desired action, 
-such as booking an appointment or cancelling one</p> 
-<a href= "https://github.com/Emmanuelarchie/PhysioClinic" target="_blank">
-<img src="images/ProtfolioProject1.png">
-</a>
- 
-<div class="project-links">
-  <a href="#">Code</a>
-  <a href="#">Live</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>Archphysio Application(Refactored)</h3>
-  <p> An optimized version of the Physio App clinic application, this time with an external interface and a 
-  built-in AI assistant, as the first point of contact with the customers. The AI chatbot is a rule-based assistant
-  guiding customers on bookings, appointments and referrals to certified physiotherapist </p>
-  <a href="https://github.com/Emmanuelarchie/rulechatbot" target= "_blank">
-    <video autoplay loop muted playsinline>
-      <source src="images/PorfolioProject2.mp4" type="video/mp4">
-    </video>
-
-    <div class=<"project-links">
-        <a href="#">Code</a>
-        <a href="#">Live</a>
+      <nav class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="highlight">Contact</a>
+      </nav>
     </div>
-    </div>  
-  
-  <div class="project-card">
+  </header>
 
-<h3>Detecting Toxicity in Text emailing system</h3>
+  <main class="container">
+    <section class="hero" id="intro">
+      <div class="hero-left">
+        <div class="eyebrow">// product-minded engineering • quality at scale</div>
+        <h2>Hi, I’m Emmanuel. I build <span class="accent">reliable</span>, user-centric products.</h2>
+        <p class="summary">
+          Customer-focused Technical Product Manager and Software Engineer with experience across quality engineering,
+          software delivery, support systems, CRM workflows, and revenue-driven operations. I enjoy turning complex
+          problems into usable products, improving release confidence, and building systems that scale.
+        </p>
+        <div class="tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">Scrum</span>
+          <span class="tag">Quality Engineering</span>
+          <span class="tag">Product Discovery</span>
+          <span class="tag">Customer Impact</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Get in touch</a>
+          <a class="button" href="#projects">View projects</a>
+          <a class="button" href="https://github.com/Emmanuelarchie" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
 
-<p>This project showcases the use of transformer models to detect toxic language by fine-tuning BERT and DistilRoberta
-on a highly imbalanced dataset, applying augmentation and rebalancing using stratified 5-fold cross-validation and 
-comparing pretrained vs fine-tuned models, examining deployment trade-offs</p>
+      <aside class="hero-right">
+        <div class="section-label">// some impacts</div>
+        <div class="impact-card">
+          <strong>£600–£1,200</strong>
+          <p>Daily revenue contribution through telecom and connectivity sales at ResQ.</p>
+        </div>
+        <div class="impact-card">
+          <strong>-35%</strong>
+          <p>Production defects reduced through testing framework improvements and QA collaboration.</p>
+        </div>
+        <div class="impact-card">
+          <strong>-25%</strong>
+          <p>Regression time reduced by improving Cypress coverage and CI/CD check strategy.</p>
+        </div>
+      </aside>
+    </section>
 
-<a href="https://github.com/Emmanuelarchie/Detecting-Toxicity-in-Text-emailing-systems-" target="_blank">
-<img src="images/Detecting Toxicity in Text">
-</a>
+    <div class="main">
+      <section class="section-shell" id="skills">
+        <div class="section-head">
+          <div>
+            <div class="section-label">// strengths</div>
+            <h3>Skills</h3>
+          </div>
+          <p class="muted">Product, technical, and delivery capabilities.</p>
+        </div>
 
-<div class="project-links">
-<a href="#">Code</a>
-<a href="#">Live</a>
-</div>
+        <div class="two-col">
+          <div class="skill-box">
+            <h4>Product</h4>
+            <div class="chips">
+              <span class="chip">Discovery</span>
+              <span class="chip">User research</span>
+              <span class="chip">KPIs / OKRs</span>
+              <span class="chip">A/B testing</span>
+              <span class="chip">Roadmaps</span>
+              <span class="chip">Stakeholder alignment</span>
+              <span class="chip">Release & risk</span>
+              <span class="chip">System design</span>
+            </div>
+          </div>
 
-</div>
-</div>
+          <div class="skill-box">
+            <h4>Technical</h4>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">SQL</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Azure</span>
+              <span class="chip">Cypress</span>
+              <span class="chip">CI/CD</span>
+            </div>
+            <p class="muted">Tools: Jira, Azure DevOps, Confluence, Figma, Power BI, Tableau, PostgreSQL/MySQL, VS Code.</p>
+          </div>
+        </div>
+      </section>
 
-<div class="project-card">
+      <section class="section-shell" id="experience">
+        <div class="section-head">
+          <div>
+            <div class="section-label">// roles, responsibilities, results</div>
+            <h3>Experience</h3>
+          </div>
+          <p class="muted">Each role highlights measurable outcomes at a glance.</p>
+        </div>
 
-<h3>Detecting Toxicity in Text emailing system</h3>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <div class="experience-main">
+              <h5>ResQ</h5>
+              <div class="meta">Telesales Specialist • Mar 2026 – Present</div>
+              <ul>
+                <li>Generated £600–£1,200 in daily revenue through the sale of mobile devices, broadband packages, and smart connectivity services.</li>
+                <li>Maintained a 10–15% sales conversion rate by identifying customer needs, handling objections, and closing deals effectively.</li>
+                <li>Processed 4–7 UK energy tariff switches daily, helping customers reduce energy costs.</li>
+                <li>Recorded 100% of call interactions in CRM systems, maintaining accurate customer follow-up pipelines.</li>
+                <li>Achieved 85–95% quality assurance scores in monitored calls by following compliance and service guidelines.</li>
+              </ul>
+            </div>
+            <aside class="outcome-panel">
+              <div class="outcome-label">Key outcome</div>
+              <div class="outcome-stat">£1.2k/day</div>
+              <p class="outcome-text">Revenue contribution with <strong>10–15%</strong> conversion and <strong>85–95%</strong> QA performance.</p>
+            </aside>
+          </article>
 
-<p>This Team Project answers the Research question "Is there a correlation between the price (in dollars) and area/
-dimension (in square feet) of houses in the United States of America. Tool:R programming language</p>
+          <article class="experience-card">
+            <div class="experience-main">
+              <h5>USAID Integrated Health Program</h5>
+              <div class="meta">Information Technology Support • Dec 2023 – Aug 2024</div>
+              <ul>
+                <li>Provided first-line and Tier 2 technical support for 80+ end users, resolving 80% of tickets within SLA time.</li>
+                <li>Configured and maintained 60+ desktops, laptops, printers, and mobile devices, reducing downtime by 30%.</li>
+                <li>Managed payroll systems, Active Directory, and Microsoft 365 access for 200+ staff.</li>
+                <li>Worked with vendors and service providers to reduce malware and hardware incidents by 60%.</li>
+                <li>Managed compliant disposal documentation for 70+ IT equipment assets.</li>
+              </ul>
+            </div>
+            <aside class="outcome-panel">
+              <div class="outcome-label">Key outcome</div>
+              <div class="outcome-stat">-60%</div>
+              <p class="outcome-text">Reduced malware and support disruptions while supporting <strong>80+</strong> users and <strong>200+</strong> staff systems.</p>
+            </aside>
+          </article>
 
-<a href="https://github.com/Emmanuelarchie/Team-Research-and-Development-Project" target="_blank">
-<img src="images/Picture1.png">
-</a>
+          <article class="experience-card">
+            <div class="experience-main">
+              <h5>Ryffable</h5>
+              <div class="meta">Software Engineer • Oct 2021 – Feb 2022</div>
+              <ul>
+                <li>Integrated third-party APIs into the CRM and monitored data flows with CloudWatch, improving sync and storage by 15%.</li>
+                <li>Helped build testing frameworks that reduced production defects by 35%.</li>
+                <li>Participated in sprint planning and code reviews, learning agile delivery and system design practices.</li>
+                <li>Contributed to £317,400+ in revenue growth while helping maintain 22% month-on-month retention.</li>
+                <li>Partnered with QA to automate core service testing and cut customer-impacting bugs by 50%.</li>
+              </ul>
+            </div>
+            <aside class="outcome-panel">
+              <div class="outcome-label">Key outcome</div>
+              <div class="outcome-stat">-50%</div>
+              <p class="outcome-text">Cut customer-impacting bugs, reduced defects by <strong>35%</strong>, and supported <strong>£317k+</strong> revenue growth.</p>
+            </aside>
+          </article>
 
-<a href="https://github.com/Emmanuelarchie/Team-Research-and-Development-Project" target="blank">
-  <img src="Picture2.png">
-</a>
+          <article class="experience-card">
+            <div class="experience-main">
+              <h5>Previous Company</h5>
+              <div class="meta">Program Manager Intern • May 2020 – Nov 2020</div>
+              <ul>
+                <li>Collaborated with product and engineering teams during scrum planning to support technical delivery.</li>
+                <li>Assisted with AWS cloud updates and refactored duplicate JavaScript, improving maintainability by 12%.</li>
+                <li>Documented REST APIs to support third-party integrations for the marketing system.</li>
+                <li>Worked cross-functionally with PMs, designers, QA, and engineers to define user stories and KPIs.</li>
+              </ul>
+            </div>
+            <aside class="outcome-panel">
+              <div class="outcome-label">Key outcome</div>
+              <div class="outcome-stat">+12%</div>
+              <p class="outcome-text">Improved maintainability and delivery alignment through API documentation and cloud update support.</p>
+            </aside>
+          </article>
+        </div>
+      </section>
 
-<div class="project-links">
-<a href="#">Code</a>
-<a href="#">Live</a>
-</div>
+      <section class="section-shell" id="projects">
+        <div class="section-head">
+          <div>
+            <div class="section-label">// things I’ve built</div>
+            <h3>Projects</h3>
+          </div>
+          <p class="muted">Make sure these image files exist in the same folder paths used below.</p>
+        </div>
 
-</div>
-</div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h4>Physio App</h4>
+            <p>Java CLI application for clinic workflows, supporting actions like appointment booking and cancellation.</p>
+            <img class="project-media" src="images/PortfolioProject1.png" alt="Physio App screenshot" loading="lazy" />
+            <div class="project-links">
+              <a href="https://github.com/Emmanuelarchie/PhysioClinic" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
 
-  <div class="project-card">
+          <article class="project-card">
+            <h4>Archphysio Application (Refactored)</h4>
+            <p>Enhanced clinic application with an external interface and a rule-based AI assistant for bookings and referrals.</p>
+            <video class="project-media" autoplay loop muted playsinline controls>
+              <source src="images/PortfolioProject2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="project-links">
+              <a href="https://github.com/Emmanuelarchie/rulechatbot" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
 
-<h3>Ryffable</h3>
+          <article class="project-card">
+            <h4>Detecting Toxicity in Text Emailing System</h4>
+            <p>Transformer-based toxicity detection project using BERT and DistilRoBERTa with rebalancing, augmentation, and cross-validation.</p>
+            <img class="project-media" src="images/detecting-toxicity.png" alt="Detecting toxicity project screenshot" loading="lazy" />
+            <div class="project-links">
+              <a href="https://github.com/Emmanuelarchie/Detecting-Toxicity-in-Text-emailing-systems-" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
 
-<p>Ryffable is a music company that offers both audio streaming and the ability to buy and stream songs, 
-with a goal to provide the best music experience by curating a selection of high quality music from around the world</p>
+          <article class="project-card">
+            <h4>Housing Price Correlation Research</h4>
+            <p>Team research project exploring the relationship between house price and area in the United States using R.</p>
+            <img class="project-media" src="images/Picture1.png" alt="Housing price analysis chart" loading="lazy" />
+            <div class="project-links">
+              <a href="https://github.com/Emmanuelarchie/Team-Research-and-Development-Project" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
 
-<a href="https://ryffable.biz" target="_blank">
-<img src="images/Ryffable.png">
-</a>
+          <article class="project-card">
+            <h4>Ryffable</h4>
+            <p>Music platform for streaming and purchasing songs, designed to improve music discovery and listening experience.</p>
+            <img class="project-media" src="images/Ryffable.png" alt="Ryffable screenshot" loading="lazy" />
+            <div class="project-links">
+              <a href="https://ryffable.biz" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-<div class="project-links">
-<a href="#">Code</a>
-<a href="#">Live</a>
-</div>
+      <section class="section-shell" id="education">
+        <div class="section-head">
+          <div>
+            <div class="section-label">// academic + certifications</div>
+            <h3>Education</h3>
+          </div>
+        </div>
 
-</div>
-</div>
+        <div class="education-grid">
+          <article class="edu-card">
+            <h4>University of Hertfordshire</h4>
+            <p class="muted">B.Sc. Computer Science (Software Engineering)</p>
+            <p class="meta">Graduated May 2023 • UK</p>
+          </article>
 
-</section> 
-  <setion id="skills">
-    <h2> # skills</h2>
-    
-</div>
+          <article class="edu-card">
+            <h4>Certifications</h4>
+            <div class="chips">
+              <span class="chip">AWS Certified Developer</span>
+              <span class="chip">Azure Fundamentals</span>
+              <span class="chip">ScrumMaster</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="contact">
+        <div class="section-head">
+          <div>
+            <div class="section-label">// let’s connect</div>
+            <h3>Contact</h3>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h4>Email</h4>
+            <p>Email works best for roles in technical product management, quality engineering, software engineering, and platform operations.</p>
+            <div class="project-links">
+              <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </div>
+          </article>
+
+          <article class="contact-card">
+            <h4>Links</h4>
+            <div class="project-links">
+              <a href="https://github.com/Emmanuelarchie" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Emmanuel Archibong • Built with HTML and CSS.
+  </footer>
 </body>
+</html>
+
