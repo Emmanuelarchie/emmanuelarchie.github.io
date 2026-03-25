@@ -938,48 +938,8 @@ background: radial-gradient(circle at center, rgba(59,130,246,0.25), transparent
   <footer>
     © 2026 Emmanuel Archibong • Built with HTML and CSS.
   </footer>
-          <div class="media-modal" id="mediaModal" onclick="closeMedia(event)">
-  <div class="media-modal-content">
-    <button class="close-modal" onclick="closeMedia(event)">×</button>
-    <img id="modalImage" src="" alt="">
-    <div class="media-modal-actions">
-      <a id="downloadImage" href="" download>Download</a>
-      <button onclick="closeMedia(event)">Close</button>
-    </div>
-  </div>
-</div>
-          <script>
-  function openMedia(src, alt) {
-    const modal = document.getElementById("mediaModal");
-    const modalImage = document.getElementById("modalImage");
-    const downloadLink = document.getElementById("downloadImage");
-
-    modalImage.src = src;
-    modalImage.alt = alt || "Project image";
-    downloadLink.href = src;
-
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeMedia(event) {
-    if (
-      event.target.id === "mediaModal" ||
-      event.target.classList.contains("close-modal") ||
-      event.target.tagName === "BUTTON"
-    ) {
-      document.getElementById("mediaModal").classList.remove("active");
-      document.body.style.overflow = "";
-    }
-  }
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      document.getElementById("mediaModal").classList.remove("active");
-      document.body.style.overflow = "";
-    }
-  });
-</script>
+       
+        
 </body>
 </html>
 
