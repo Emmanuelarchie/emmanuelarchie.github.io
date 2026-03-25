@@ -936,6 +936,15 @@ background: radial-gradient(circle at center, rgba(59,130,246,0.25), transparent
   <footer>
     © 2026 Emmanuel Archibong • Built with HTML and CSS.
   </footer>
+          <div class="media-modal" id="mediaModal" onclick="closeMedia(event)">
+  <div class="media-modal-content">
+    <button class="close-modal" onclick="closeMedia(event)">×</button>
+    <img id="modalImage" src="" alt="">
+    <div class="media-modal-actions">
+      <button onclick="closeMedia(event)">Close</button>
+    </div>
+  </div>
+</div>
    <script>
   function openMedia(src, alt) {
     const modal = document.getElementById("mediaModal");
